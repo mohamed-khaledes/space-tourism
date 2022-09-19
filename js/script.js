@@ -29,7 +29,7 @@ function destinationFunction(){
             })
             e.target.classList.add("active-section");
             console.log(e.target.dataset.id);
-            fetch('/js/data.json')
+            fetch('js/data.json')
             .then((response) => response.json())
             .then((json) => {
             let jsonImage=json.destinations[e.target.dataset.id].images.webp;
@@ -77,7 +77,7 @@ function crewFunction(){
                 el.classList.remove('active-point');
             })
             e.target.classList.add("active-point");
-            fetch('../js/data.json').then((response)=>response.json())
+            fetch('js/data.json').then((response)=>response.json())
             .then((json)=>{
                 let role =json.crew[e.target.dataset.id].role;
                 let name =json.crew[e.target.dataset.id].name;
@@ -111,7 +111,7 @@ function TechFunction(){
             })
             e.target.classList.add("active");
             console.log(e.target.dataset.id);
-            fetch("../js/data.json").then((respone)=>respone.json())
+            fetch("js/data.json").then((respone)=>respone.json())
             .then((json)=>{
                 console.log(json);
                 let techName = json.technology[e.target.dataset.id].name;
