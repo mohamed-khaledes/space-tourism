@@ -40,7 +40,7 @@ function destinationFunction(){
             lSDestination.innerHTML =`
             <p><span>01</span> Pick your destination</p>
         <div class="box-img">
-        <img class="planet-image" src=".${jsonImage}" alt="">
+        <img class="planet-image" src="${jsonImage}" alt="">
         </div>
             `;
             sectionBody.innerHTML = `
@@ -91,7 +91,7 @@ function crewFunction(){
       </div>
                 `;
                 crewRightSide.innerHTML =`
-                <img src=".${image}" alt="">
+                <img src="${image}" alt="">
                 `
             })
         })
@@ -122,7 +122,7 @@ function TechFunction(){
             <p>${techdes}</p>
                 `;
                 rightSideTech.innerHTML =`
-                <img src=".${techimage}" alt="">
+                <img src="${techimage}" alt="">
                 `
             })
         });
